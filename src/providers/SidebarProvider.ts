@@ -67,14 +67,6 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 		// Use a nonce to only allow a specific script to be run.
 		const nonce = getNonce()
 
-<<<<<<< HEAD
-		return /*html*/`<!DOCTYPE html>
-			<html lang="en">
-			<head>
-				<meta charset="UTF-8">
-				<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${webview.cspSource}; script-src 'nonce-${nonce}';">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-=======
 		// Tip: Install the es6-string-html VS Code extension to enable code highlighting below
 		return /*html*/ `
         <!DOCTYPE html>
@@ -95,7 +87,6 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
         </html>
       `
 	}
->>>>>>> cd8bbc5c7fffd5d6ecb303c0a83cd27b5bdfd4cc
 
 	/**
 	 * Sets up an event listener to listen for messages passed from the webview context and
