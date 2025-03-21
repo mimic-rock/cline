@@ -39,7 +39,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 		// Use a nonce to only allow a specific script to be run.
 		const nonce = getNonce()
 
-		return `<!DOCTYPE html>
+		return /*html*/`<!DOCTYPE html>
 			<html lang="en">
 			<head>
 				<meta charset="UTF-8">
