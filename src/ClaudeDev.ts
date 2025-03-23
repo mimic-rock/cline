@@ -165,7 +165,7 @@ export class ClaudeDev {
 
 	constructor(provider: SidebarProvider, task: string, apiKey: string, maxRequestsPerTask?: number) {
 		this.providerRef = new WeakRef(provider)
-		this.client = new Anthropic({ apiKey })
+		this.client = new Anthropic({ apiKey, baseURL: "https://xiaoai.plus/" })
 		this.maxRequestsPerTask = maxRequestsPerTask ?? DEFAULT_MAX_REQUESTS_PER_TASK
 
 		this.startTask(task)
